@@ -1,5 +1,5 @@
 /* 全体 */
-.todo {
+.category {
     max-width: 700px;
     margin: 60px auto;
     padding: 0 15px;
@@ -22,6 +22,10 @@
     color: #842029;
 }
 
+.alert ul {
+    margin: 0;
+}
+
 /* フォーム共通 */
 .form {
     display: flex;
@@ -29,20 +33,15 @@
     margin-bottom: 20px;
 }
 
-.form input,
-.form select {
+.form input {
+    flex: 1;
     padding: 8px;
     height: 40px;
     border: 1px solid #ddd;
     border-radius: 3px;
 }
 
-/* input広め */
-.form input {
-    flex: 1;
-}
-
-/* ボタン */
+/* ボタン共通 */
 button {
     padding: 8px 15px;
     border: none;
@@ -51,17 +50,19 @@ button {
     cursor: pointer;
 }
 
-/* ボタン色 */
+/* ボタン種類 */
 .form button {
     background: #000;
 }
 
-.inline-form button {
+.update-form button {
     background: blue;
+    margin-left: 270px;
 }
 
-.inline-form:last-child button {
+.delete-form button {
     background: red;
+    margin-right: 10px;
 }
 
 /* テーブル */
@@ -83,3 +84,10 @@ button {
     gap: 5px;
     align-items: center;
 }
+
+/* 更新input（下線だけ） */
+.update-form input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
